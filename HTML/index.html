@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
+        <script>
+            function allowDrop (ev)
+            {
+                ev.preventDefault();
+            }
+            function drop (ev)
+            {
+                var elt = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(elt));
+            }
+            function drag(ev)
+            {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+        </script>
+        <script>
+        $
+        (
+            function()
+            {
+                $('#btnSearch').click
+                (
+                    function()
+                    {
+                        AfficherLesMaladies();
+                    }
+                );
+            }
+        );
+        
+        </script>
+    </head>
+    <body>
+        <div id = "divMaladie" ondrop="drop(event)" ondragover="allowDrop">
+        </div>
+        <div id = "divMedicament" ondrop="drop(event)" ondragover="allowDrop">
+         </div>
+    </body>
+</html>

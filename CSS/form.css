@@ -1,0 +1,19 @@
+#divMaladie
+{
+    width: 200px;
+    height: 200px;
+}
+
+#divMedicamentPrescrit
+{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+#divMedicamentNonPrecrit
+{
+    width: 200px;
+    height: 200px;
+    float: right;
+}
